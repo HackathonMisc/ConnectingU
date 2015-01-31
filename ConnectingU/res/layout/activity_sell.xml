@@ -57,6 +57,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/bookDescription"
         android:layout_marginBottom="24dp"
+        android:onClick="publishBook"
         android:text="Upload" />
 
     <Button
@@ -67,6 +68,7 @@
         android:layout_alignBottom="@+id/publish"
         android:layout_alignLeft="@+id/pageDiscript"
         android:layout_marginLeft="20dp"
+        android:onClick="mainMenu"
         android:text="Main Menu" />
 
 </RelativeLayout>

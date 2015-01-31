@@ -1,12 +1,20 @@
 package com.example.connectingu;
 
-import android.support.v7.app.ActionBarActivity;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class UserPref extends ActionBarActivity {
-
+	private ArrayList<String> stringArray;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,7 +27,7 @@ public class UserPref extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.user_pref, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
@@ -30,5 +38,55 @@ public class UserPref extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	public void saveToFile(){
+		
+	
+		String FILENAME = "userName"; // save user name
+		String FILENAME2 = "email"; // save email
+		String FILENAME3 = "deletion"; // save deletion code
+		
+		
+		
+		EditText userEmailName = (EditText) findViewById(R.id.emailLine);
+		String userEmail = userEmailName.getText().toString();
+		
+	
+		EditText userName = (EditText) findViewById(R.id.uName);
+		String uName = userName.getText().toString();
+		
+		EditText deletionCode = (EditText) findViewById(R.id.deletionCode);
+		String deleteCode = deletionCode.getText().toString();
+
+		FileOutputStream fos = null;
+
+		FileOutputStream fos2 = null;
+
+		FileOutputStream fos3 = null;
+		try {
+			fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
+			fos2 = openFileOutput(FILENAME2, Context.MODE_PRIVATE);
+			fos3 = openFileOutput(FILENAME3, Context.MODE_PRIVATE);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			fos.write(userEmail.getBytes());
+			fos2.write(uName.getBytes());
+			fos3.write(deleteCode.getBytes());
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			fos.close();
+			fos2.close();
+			fos3.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

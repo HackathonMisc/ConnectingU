@@ -9,21 +9,10 @@
     tools:context="com.example.connectingu.UserPref" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/UserPref" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="15dp"
-        android:hint="Enter Name"
-        
-        android:ems="10" />
 
     <Button
         android:id="@+id/saveButton"
@@ -33,38 +22,48 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="17dp"
         android:layout_marginRight="14dp"
+        android:onClick="saveToFile"
         android:text="Save" />
-
-    <EditText
-        android:id="@+id/emailLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:hint="Enter Email"
-        android:inputType="textEmailAddress" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/deletionCode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_centerVertical="true"
-        android:hint="Enter deletion code"
-        android:ems="10" />
 
     <Button
         android:id="@+id/Cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/userName"
+        android:layout_alignBaseline="@+id/saveButton"
+        android:layout_alignBottom="@+id/saveButton"
         android:layout_alignLeft="@+id/deletionCode"
-        android:layout_marginLeft="33dp"
+        android:layout_marginLeft="34dp"
         android:text="Cancel" />
+
+    <EditText
+        android:id="@+id/emailLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deletionCode"
+        android:layout_alignLeft="@+id/deletionCode"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/deletionCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveButton"
+        android:layout_alignLeft="@+id/uName"
+        android:layout_marginBottom="78dp"
+        android:ems="10"
+        android:hint="Enter deletion code" />
+
+    <EditText
+        android:id="@+id/uName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailLine"
+        android:layout_alignLeft="@+id/Description"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Enter Name" />
 
 </RelativeLayout>

@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">ConnectingU</string>
-    <string name="UserPref">Add a user name and email to allow for easy textbook sales</string>
+    <string name="UserPref">Add a user name and email to allow for easy textbook sales. The deletion code is a password to remove the text book after your sale.</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_user_account">UserAccount</string>
     <string name="title_activity_user_pref">UserPref</string>
