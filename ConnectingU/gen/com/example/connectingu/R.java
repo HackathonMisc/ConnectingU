@@ -1666,7 +1666,7 @@ containing a value of this type.
         public static final int dialog=0x7f090019;
         public static final int disableHome=0x7f09000d;
         public static final int dropdown=0x7f09001a;
-        public static final int editText1=0x7f090047;
+        public static final int editText1=0x7f090046;
         public static final int editText2=0x7f09004b;
         public static final int edit_query=0x7f090033;
         public static final int emailLine=0x7f090049;
@@ -1708,7 +1708,7 @@ containing a value of this type.
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
         public static final int textBookName=0x7f09003f;
-        public static final int textView1=0x7f090046;
+        public static final int textView1=0x7f090047;
         public static final int title=0x7f090027;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
@@ -1768,8 +1768,9 @@ containing a value of this type.
         public static final int activity_main=0x7f030017;
         public static final int activity_sell=0x7f030018;
         public static final int activity_start=0x7f030019;
-        public static final int activity_user_pref=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_start1=0x7f03001a;
+        public static final int activity_user_pref=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
