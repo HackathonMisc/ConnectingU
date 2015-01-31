@@ -15,6 +15,7 @@
         android:layout_marginBottom="128dp"
         android:minHeight="70dp"
         android:text="Let&apos;s Get Started!"
+        android:onClick="goToUserPref"
         android:textSize="30dp" />
 
 </RelativeLayout>
