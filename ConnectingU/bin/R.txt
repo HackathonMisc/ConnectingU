@@ -440,10 +440,12 @@ int layout abc_search_view 0x7f030015
 int layout abc_simple_dropdown_hint 0x7f030016
 int layout activity_main 0x7f030017
 int layout activity_sell 0x7f030018
-int layout activity_start_name 0x7f030019
-int layout activity_start_up 0x7f03001a
-int layout activity_user_pref 0x7f03001b
-int layout support_simple_spinner_dropdown_item 0x7f03001c
+int layout activity_start 0x7f030019
+int layout activity_start1 0x7f03001a
+int layout activity_start_name 0x7f03001b
+int layout activity_start_up 0x7f03001c
+int layout activity_user_pref 0x7f03001d
+int layout support_simple_spinner_dropdown_item 0x7f03001e
 int menu main 0x7f0c0000
 int menu sell 0x7f0c0001
 int menu sell_page 0x7f0c0002

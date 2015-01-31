@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class StartUp extends ActionBarActivity {
 
@@ -32,7 +33,7 @@ public class StartUp extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	public void goToUserPref(){
+	public void goToUserPref(View view){
 		Intent intent = new Intent(this, UserPref.class);
 		startActivity(intent);
 	}
