@@ -50,4 +50,23 @@
         android:layout_marginTop="38dp"
         android:text="Post the name, price and details of your text book you wish to sale." />
 
+    <Button
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/bookDescription"
+        android:layout_marginBottom="24dp"
+        android:text="Upload" />
+
+    <Button
+        android:id="@+id/MainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/publish"
+        android:layout_alignBottom="@+id/publish"
+        android:layout_alignLeft="@+id/pageDiscript"
+        android:layout_marginLeft="20dp"
+        android:text="Main Menu" />
+
 </RelativeLayout>

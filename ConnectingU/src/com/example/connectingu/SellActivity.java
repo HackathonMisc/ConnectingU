@@ -19,7 +19,7 @@ public class SellActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.sell, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
