@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".UserAccount"
+            android:label="@string/title_activity_user_account" >
+        </activity>
+        <activity
+            android:name=".UserPref"
+            android:label="@string/title_activity_user_pref" >
+        </activity>
     </application>
 
 </manifest>
