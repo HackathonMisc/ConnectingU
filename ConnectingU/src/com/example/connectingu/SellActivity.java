@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
+import com.microsoft.windowsazure.mobileservices.ServiceFilterResponse;
+import com.microsoft.windowsazure.mobileservices.TableOperationCallback;
 
 public class SellActivity extends Activity {
 	private MobileServiceClient mClient;
@@ -54,15 +56,15 @@ public class SellActivity extends Activity {
 		
 		EditText deletionCode = (EditText) findViewById(R.id.deletionCode);
 		String deleteCode = deletionCode.getText().toString();
-		//mClient.getTable(Item.class).insert(item, new TableOperationCallback<Item>() {
-//		      public void onCompleted(Item entity, Exception exception, ServiceFilterResponse response) {
-//		            if (exception == null) {
-//		                  // Insert succeeded
-//		            } else {
-//		                  // Insert failed
-//		            }
-//		      }
-//		});
+		mClient.getTable(Item.class).insert(item, new TableOperationCallback<Item>() {
+		      public void onCompleted(Item entity, Exception exception, ServiceFilterResponse response) {
+		            if (exception == null) {
+		                  // Insert succeeded
+		            } else {
+		                  // Insert failed
+		            }
+		      }
+		});
 	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
