@@ -18,6 +18,18 @@ public class UserPref extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_user_pref);
+		if(getSharedPreferences("myPrefs", Context.MODE_PRIVATE) != null){
+			SharedPreferences settings = getSharedPreferences("myPrefs", Context.MODE_PRIVATE);
+			EditText setEmailName = (EditText) findViewById(R.id.emailLine);
+			EditText setUserName = (EditText) findViewById(R.id.uName);
+			EditText setDeletionCode = (EditText) findViewById(R.id.deletionCode);
+			
+			
+			setEmailName.setText(settings.getString("Email",""));
+			setUserName.setText(settings.getString("uName",""));
+			setDeletionCode.setText(settings.getString("delCode",""));
+		}
+
 	}
 
 	@Override

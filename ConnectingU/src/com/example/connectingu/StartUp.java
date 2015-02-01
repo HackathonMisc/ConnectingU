@@ -12,7 +12,7 @@ public class StartUp extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		if(getSharedPreferences("myPrefs", Context.MODE_PRIVATE) != null){
+		if(getSharedPreferences("myPrefs", Context.MODE_PRIVATE).contains("uName")){
 			Intent intent = new Intent(this, MainMenu.class);
 			startActivity(intent);
 		}
