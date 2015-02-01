@@ -2,31 +2,51 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scaleType="center"
-    android:background="@drawable/bg"
-    android:orientation="vertical" >
+    android:background="#33B5E5"
+    android:orientation="vertical"
+    android:outlineProvider="none"
+    android:scaleType="center" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="Hey,"
+        android:textColor="#FFFFFF"
+        android:textSize="120sp" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="123dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="100dp"
+        android:background="@null"
+        android:enabled="false"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
         android:minHeight="70dp"
         android:onClick="goToUserPref"
+        android:shadowRadius="0"
         android:text="Let&apos;s Get Connected!"
-        android:textSize="25dp" />
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="68dp"
-        android:contentDescription="Background"
-        android:src="@drawable/logo" />
+        android:background="@drawable/next"
+        android:onClick="goToUserPref"
+        android:enabled="false"
+        android:minHeight="55dp"
+        android:minWidth="55dp"
+        android:tint="#FFFFFF" />
 
 </RelativeLayout>

@@ -1637,10 +1637,11 @@ containing a value of this type.
         public static final int bgs=0x7f020035;
         public static final int ic_launcher=0x7f020036;
         public static final int logo=0x7f020037;
+        public static final int next=0x7f020038;
     }
     public static final class id {
-        public static final int Cancel=0x7f09004d;
-        public static final int Description=0x7f09004b;
+        public static final int Cancel=0x7f09004e;
+        public static final int Description=0x7f09004c;
         public static final int MainMenu=0x7f090049;
         public static final int Price=0x7f090045;
         public static final int action_bar=0x7f090031;
@@ -1656,23 +1657,24 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090051;
+        public static final int action_settings=0x7f090052;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
         public static final int bookDescription=0x7f090046;
         public static final int button1=0x7f090041;
+        public static final int button2=0x7f09004b;
         public static final int buyButton=0x7f090042;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f09002f;
         public static final int default_activity_button=0x7f090024;
-        public static final int deletionCode=0x7f09004e;
+        public static final int deletionCode=0x7f09004f;
         public static final int dialog=0x7f090019;
         public static final int disableHome=0x7f09000d;
         public static final int dropdown=0x7f09001a;
         public static final int edit_query=0x7f090033;
-        public static final int emailLine=0x7f09004f;
+        public static final int emailLine=0x7f090050;
         public static final int end=0x7f09001c;
         public static final int expand_activities_button=0x7f090022;
         public static final int expanded_menu=0x7f090028;
@@ -1682,7 +1684,6 @@ containing a value of this type.
         public static final int icon=0x7f090026;
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090023;
-        public static final int imageView1=0x7f09004a;
         public static final int list=0x7f09003f;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090025;
@@ -1695,7 +1696,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f090008;
         public static final int publish=0x7f090048;
         public static final int radio=0x7f09002b;
-        public static final int saveButton=0x7f09004c;
+        public static final int saveButton=0x7f09004d;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
         public static final int search_button=0x7f090036;
@@ -1715,8 +1716,9 @@ containing a value of this type.
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
         public static final int textBookName=0x7f090044;
+        public static final int textView1=0x7f09004a;
         public static final int title=0x7f090027;
-        public static final int uName=0x7f090050;
+        public static final int uName=0x7f090051;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
         public static final int withText=0x7f090018;
@@ -1849,13 +1851,12 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
         public static final int action_settings=0x7f0a0012;
         public static final int app_name=0x7f0a0010;
-        public static final int hello_world=0x7f0a0016;
-        public static final int title_activity_buy=0x7f0a001b;
-        public static final int title_activity_main_menu=0x7f0a001a;
-        public static final int title_activity_sell=0x7f0a0017;
+        public static final int title_activity_buy=0x7f0a001a;
+        public static final int title_activity_main_menu=0x7f0a0019;
+        public static final int title_activity_sell=0x7f0a0016;
         public static final int title_activity_sell_page=0x7f0a0015;
-        public static final int title_activity_start_name=0x7f0a0019;
-        public static final int title_activity_start_up=0x7f0a0018;
+        public static final int title_activity_start_name=0x7f0a0018;
+        public static final int title_activity_start_up=0x7f0a0017;
         public static final int title_activity_user_account=0x7f0a0013;
         public static final int title_activity_user_pref=0x7f0a0014;
     }

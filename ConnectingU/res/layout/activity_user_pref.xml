@@ -6,13 +6,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFBB33"
     tools:context="com.example.connectingu.UserPref" >
 
     <TextView
         android:id="@+id/Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/UserPref" />
+        android:text="@string/UserPref"
+        android:textColor="#ffffff"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+         />
 
     <Button
         android:id="@+id/saveButton"
@@ -63,8 +67,11 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/emailLine"
         android:layout_alignLeft="@+id/Description"
-        android:layout_marginBottom="43dp"
+        android:layout_marginBottom="42dp"
         android:ems="10"
-        android:hint="Enter Name" />
+        android:hint="Enter Name" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
