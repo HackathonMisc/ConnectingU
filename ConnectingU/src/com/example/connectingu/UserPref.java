@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class UserPref extends Activity {
 	private ArrayList<String> stringArray;
@@ -66,12 +67,18 @@ public class UserPref extends Activity {
 		FileOutputStream fos2 = null;
 
 		FileOutputStream fos3 = null;
+		
+		if(userEmail.matches("") || uName.matches("") || deleteCode.matches("")){
+			Context context = getApplicationContext();
+			Toast.makeText(context, "Please fill in all the fields", Toast.LENGTH_LONG).show();
+		}
+		
+		else{
 		try {
 			fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
 			fos2 = openFileOutput(FILENAME2, Context.MODE_PRIVATE);
 			fos3 = openFileOutput(FILENAME3, Context.MODE_PRIVATE);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
@@ -80,7 +87,6 @@ public class UserPref extends Activity {
 			fos3.write(deleteCode.getBytes());
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
@@ -88,11 +94,12 @@ public class UserPref extends Activity {
 			fos2.close();
 			fos3.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Intent intent = new Intent(this, MainMenu.class);
 		startActivity(intent);
+		}
+		
 		
 	}
 	public void cancel(View view){

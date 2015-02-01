@@ -7,7 +7,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#FFBB33"
-    tools:context="com.example.connectingu.UserPref" >
+    tools:context="com.example.connectingu.UserPref"
+    android:screenOrientation="portrait" >
 
     <TextView
         android:id="@+id/Description"
