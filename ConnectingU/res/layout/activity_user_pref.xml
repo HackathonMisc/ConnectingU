@@ -6,9 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#FFBB33"
-    tools:context="com.example.connectingu.UserPref"
-    android:screenOrientation="portrait" >
+    android:background="#FF4444"
+    tools:context="com.example.connectingu.UserPref" >
 
     <TextView
         android:id="@+id/Description"
@@ -64,6 +63,7 @@
         android:layout_alignLeft="@+id/uName"
         android:layout_below="@+id/uName"
         android:layout_marginTop="42dp"
+        android:textColor="#ffffff"
         android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
         android:ems="10"
         android:hint="Enter Email"
