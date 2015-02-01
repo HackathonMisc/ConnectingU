@@ -335,6 +335,7 @@ int drawable abc_textfield_search_default_mtrl_alpha 0x7f020031
 int drawable abc_textfield_search_material 0x7f020032
 int drawable blurt 0x7f020033
 int drawable ic_launcher 0x7f020034
+int drawable logo 0x7f020035
 int id Cancel 0x7f09004b
 int id Description 0x7f090049
 int id MainMenu 0x7f090048
