@@ -62,7 +62,10 @@ public class SellActivity extends Activity {
 		EditText pr = (EditText) findViewById(R.id.Price);
 		String price = pr.getText().toString();
 		
-		
+		item.TextBookName = names;
+		item.Price = price;
+		item.CourseID = courseID;
+		item.Description = Description;
 		
 		mClient.getTable(Item.class).insert(item, new TableOperationCallback<Item>() {
 		      public void onCompleted(Item entity, Exception exception, ServiceFilterResponse response) {

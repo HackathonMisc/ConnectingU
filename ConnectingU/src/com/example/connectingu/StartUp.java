@@ -1,21 +1,18 @@
 package com.example.connectingu;
 
-import java.io.File;
-
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import com.microsoft.windowsazure.mobileservices.*;
 public class StartUp extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		File file = new File("/data/data/" + getPackageName() +  "/shared_prefs/" + getPackageName()+ "_preferences.xml");
-		if(file.exists()){
+		if(getSharedPreferences("myPrefs", Context.MODE_PRIVATE) != null){
 			Intent intent = new Intent(this, MainMenu.class);
 			startActivity(intent);
 		}
