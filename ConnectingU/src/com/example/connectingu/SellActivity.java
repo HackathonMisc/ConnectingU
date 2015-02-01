@@ -16,11 +16,11 @@ public class SellActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sell);
-		mClient = new MobileServiceClient(
-			      "https://createuhack.azure-mobile.net/",
-			      "VYUFlTqdDvsVILWwLeXVWBhwmfHMMY55",
-			      this
-			);
+//		mClient = new MobileServiceClient(
+//			      "https://createuhack.azure-mobile.net/",
+//			      "VYUFlTqdDvsVILWwLeXVWBhwmfHMMY55",
+//			      this
+//			);
 	}
 
 	@Override
