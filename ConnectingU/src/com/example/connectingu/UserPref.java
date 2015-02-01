@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 
 public class UserPref extends ActionBarActivity {
@@ -39,7 +40,7 @@ public class UserPref extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	public void saveToFile(){
+	public void saveToFile(View view){
 		
 	
 		String FILENAME = "userName"; // save user name
