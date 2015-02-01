@@ -6,7 +6,63 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#AA66CC"
     tools:context="com.example.connectingu.SellActivity" >
+
+    <EditText
+        android:id="@+id/textBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pageDiscript"
+        android:layout_below="@+id/pageDiscript"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+        android:hint="Textbook Name"
+        android:textColor="#ffffff" >
+
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textBookName"
+        android:layout_below="@+id/textBookName"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+        android:hint="Enter Price"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/bookDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Price"
+        android:layout_below="@+id/Price"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+        android:hint="Description"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/MainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookDescription"
+        android:layout_below="@+id/bookDescription"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:enabled="false"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+        android:onClick="mainMenu"
+        android:text="Main Menu"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/pageDiscript"
@@ -14,62 +70,26 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:text="Post the name, price and details of the textbook you wish to sell." />
-
-    <EditText
-        android:id="@+id/bookDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/publish"
-        android:layout_alignLeft="@+id/Price"
-        android:layout_marginBottom="74dp"
-        android:ems="10"
-        android:hint="description" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/Price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bookDescription"
-        android:layout_alignLeft="@+id/textBookName"
-        android:layout_marginBottom="61dp"
-        android:ems="10"
-        android:hint="Enter Price" />
-
-    <EditText
-        android:id="@+id/textBookName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Price"
-        android:layout_alignLeft="@+id/pageDiscript"
-        android:layout_marginBottom="42dp"
-        android:ems="10"
-        android:hint="Textbook name" />
-
-    <Button
-        android:id="@+id/MainMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/publish"
-        android:layout_alignBottom="@+id/publish"
-        android:layout_alignLeft="@+id/bookDescription"
-        android:layout_marginLeft="18dp"
-        android:onClick="mainMenu"
-        android:text="Main Menu" />
+        android:layout_marginTop="30dp"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+        android:text="Post the name, price and details of the textbook you wish to sell."
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/publish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignBaseline="@+id/MainMenu"
+        android:layout_alignBottom="@+id/MainMenu"
         android:layout_alignRight="@+id/pageDiscript"
-        android:layout_marginBottom="71dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="16dp"
+        android:background="@null"
+        android:enabled="false"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
         android:onClick="publishBook"
-        android:text="Upload" />
+        android:text="Upload"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
 </RelativeLayout>

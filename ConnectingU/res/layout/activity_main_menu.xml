@@ -6,35 +6,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.connectingu.MainMenu" >
+    tools:context="com.example.connectingu.MainMenu"
+    android:background="#33B5E5" >
 
     <Button
         android:id="@+id/sellButton"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/button1"
+        android:layout_above="@+id/buyButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
+        android:layout_marginBottom="27dp"
         android:onClick="goToSell"
         android:text="Sell Textbooks" />
-
-    <Button
-        android:id="@+id/buyButton"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_alignLeft="@+id/sellButton"
-        android:layout_below="@+id/sellButton"
-        android:layout_marginTop="36dp"
-        android:onClick="goToBuy"
-        android:text="Buy Textbooks" />
 
     <Button
         android:id="@+id/goToUserPref"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_alignLeft="@+id/buyButton"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="87dp"
         android:onClick="goToUserPref"
         android:text="User Prefrences" />
+
+    <Button
+        android:id="@+id/buyButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/goToUserPref"
+        android:layout_alignLeft="@+id/sellButton"
+        android:layout_marginBottom="34dp"
+        android:onClick="goToBuy"
+        android:text="Buy Textbooks" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="ConnectingU"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
