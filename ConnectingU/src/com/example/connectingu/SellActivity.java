@@ -47,15 +47,23 @@ public class SellActivity extends Activity {
 	}
 	public void publisBook(View view){
 		Item item = new Item();
+		
 		EditText Decsrip = (EditText) findViewById(R.id.bookDescription);
 		String Description = Decsrip.getText().toString();
 		
 	
-		EditText Name = (EditText) findViewById(R.id.uName);
-		String uName = Name.getText().toString();
+		EditText CId = (EditText) findViewById(R.id.courseId);
+		String courseID = CId.getText().toString();
 		
-		EditText deletionCode = (EditText) findViewById(R.id.deletionCode);
-		String deleteCode = deletionCode.getText().toString();
+		EditText name = (EditText) findViewById(R.id.textBookName);
+		String names = name.getText().toString();
+		
+
+		EditText pr = (EditText) findViewById(R.id.Price);
+		String price = pr.getText().toString();
+		
+		
+		
 		mClient.getTable(Item.class).insert(item, new TableOperationCallback<Item>() {
 		      public void onCompleted(Item entity, Exception exception, ServiceFilterResponse response) {
 		            if (exception == null) {
