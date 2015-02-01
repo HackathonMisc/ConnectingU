@@ -9,5 +9,11 @@
 	<classpathentry kind="lib" path="C:/Users/devon/Desktop/mobileservices/mobileservices-1.1.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/devon/Desktop/mobileservices/mobileservices-1.1.5-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/devon/Desktop/mobileservices/mobileservices-1.1.5-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notificationhubs/notification-hubs-0.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notificationhubs/notification-hubs-0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notificationhubs/notification-hubs-0.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notifications/notifications-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notifications/notifications-1.0.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notifications/notifications-1.0.1-sources.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
