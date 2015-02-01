@@ -5,15 +5,15 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notifications/notifications-1.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notifications/notifications-1.0.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notifications/notifications-1.0.1-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notificationhubs/notification-hubs-0.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notificationhubs/notification-hubs-0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/notificationhubs/notification-hubs-0.4-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/mobileservices/gson-2.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/mobileservices/mobileservices-1.1.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/mobileservices/mobileservices-1.1.5-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/devon/Desktop/mobileservices/mobileservices-1.1.5-sources.jar"/>
+	<classpathentry kind="lib" path="azurejars/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="azurejars/mobileservices-1.1.5-javadoc.jar"/>
+	<classpathentry kind="lib" path="azurejars/mobileservices-1.1.5-sources.jar"/>
+	<classpathentry kind="lib" path="azurejars/mobileservices-1.1.5.jar"/>
+	<classpathentry kind="lib" path="azurejars/notification-hubs-0.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="azurejars/notification-hubs-0.4-sources.jar"/>
+	<classpathentry kind="lib" path="azurejars/notification-hubs-0.4.jar"/>
+	<classpathentry kind="lib" path="azurejars/notifications-1.0.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="azurejars/notifications-1.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="azurejars/notifications-1.0.1.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
