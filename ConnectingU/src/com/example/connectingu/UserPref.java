@@ -1,12 +1,9 @@
 package com.example.connectingu;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 
-import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -60,7 +57,14 @@ public class UserPref extends ActionBarActivity {
 		EditText deletionCode = (EditText) findViewById(R.id.deletionCode);
 		String deleteCode = deletionCode.getText().toString();
 
-		FileOutputStream fos = null;
+		SharedPreferences myPrefs = getSharedPreferences("myPrefs", MODE_PRIVATE);
+		SharedPreferences.Editor e = myPrefs.edit();
+		e.putString("uName", uName);
+		e.putString("Email", userEmail);
+		e.putString("delCode", deleteCode);
+		e.commit();
+
+		/*FileOutputStream fos = null;
 
 		FileOutputStream fos2 = null;
 
@@ -89,7 +93,7 @@ public class UserPref extends ActionBarActivity {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		Intent intent = new Intent(this, MainMenu.class);
 		startActivity(intent);
 		

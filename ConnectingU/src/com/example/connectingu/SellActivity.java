@@ -1,12 +1,17 @@
 package com.example.connectingu;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class SellActivity extends ActionBarActivity {
-
+	String FILENAME = "userName"; // save user name
+	String FILENAME2 = "email"; // save email
+	String FILENAME3 = "deletion"; // save deletion code
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,7 +24,11 @@ public class SellActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.sell, menu);
 		return true;
 	}
-	public void publisBook(){
+	public void publishBook(View view){
+		SharedPreferences myPrefs = getSharedPreferences("myPrefs", MODE_PRIVATE);
+		String name = myPrefs.getString("uName", "Student");
+		Toast.makeText(this, name, Toast.LENGTH_LONG).show();
+				
 		
 	}
 	@Override
