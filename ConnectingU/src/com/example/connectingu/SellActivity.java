@@ -33,10 +33,33 @@ public class SellActivity extends Activity {
 		}
 	}
 	public class Item {
-	      public String TextBookName;
-	      public String Price;
-	      public String CourseID;
-	      public String Description;
+		/**
+		 * Item text
+		 */
+		@com.google.gson.annotations.SerializedName("TextBookName")
+		public String mTextBookName;
+
+		/**
+		 * Item Id
+		 */
+		@com.google.gson.annotations.SerializedName("id")
+		public String mId;
+
+		/**
+		 * Item Id
+		 */
+		@com.google.gson.annotations.SerializedName("Price")
+		public String mPrice;
+		/**
+		 * Item Id
+		 */
+		@com.google.gson.annotations.SerializedName("CourseID")
+		public String mCourseID;
+		/**
+		 * Item Id
+		 */
+		@com.google.gson.annotations.SerializedName("Description")
+		public String mDescription;
 	}
 
 	@Override
@@ -62,10 +85,10 @@ public class SellActivity extends Activity {
 		EditText pr = (EditText) findViewById(R.id.Price);
 		String price = pr.getText().toString();
 		
-		item.TextBookName = names;
-		item.Price = price;
-		item.CourseID = courseID;
-		item.Description = Description;
+		item.mTextBookName = names;
+		item.mPrice = price;
+		item.mCourseID = courseID;
+		item.mDescription = Description;
 		
 		mClient.getTable(Item.class).insert(item, new TableOperationCallback<Item>() {
 		      public void onCompleted(Item entity, Exception exception, ServiceFilterResponse response) {
@@ -77,6 +100,7 @@ public class SellActivity extends Activity {
 		      }
 		});
 	}
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
