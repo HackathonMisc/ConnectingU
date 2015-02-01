@@ -7,12 +7,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
+
 public class SellActivity extends Activity {
+	private MobileServiceClient mClient;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sell);
+		mClient = new MobileServiceClient(
+			      "https://createuhack.azure-mobile.net/",
+			      "VYUFlTqdDvsVILWwLeXVWBhwmfHMMY55",
+			      this
+			);
 	}
 
 	@Override

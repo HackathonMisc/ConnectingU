@@ -1,13 +1,9 @@
 package com.example.connectingu;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,8 +12,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class UserPref extends Activity {
-	private ArrayList<String> stringArray;
-	
+	public static final String PREFS_NAME = "MyPrefsFile";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,11 +40,6 @@ public class UserPref extends Activity {
 	}
 	public void saveToFile(View view){
 		
-	
-		String FILENAME = "userName"; // save user name
-		String FILENAME2 = "email"; // save email
-		String FILENAME3 = "deletion"; // save deletion code
-		
 		
 		
 		EditText userEmailName = (EditText) findViewById(R.id.emailLine);
@@ -60,12 +51,6 @@ public class UserPref extends Activity {
 		
 		EditText deletionCode = (EditText) findViewById(R.id.deletionCode);
 		String deleteCode = deletionCode.getText().toString();
-
-		FileOutputStream fos = null;
-
-		FileOutputStream fos2 = null;
-
-		FileOutputStream fos3 = null;
 		
 		if(userEmail.matches("") || uName.matches("") || deleteCode.matches("")){
 			Context context = getApplicationContext();
@@ -73,30 +58,14 @@ public class UserPref extends Activity {
 		}
 		
 		else{
-		try {
-			fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
-			fos2 = openFileOutput(FILENAME2, Context.MODE_PRIVATE);
-			fos3 = openFileOutput(FILENAME3, Context.MODE_PRIVATE);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		try {
-			fos.write(userEmail.getBytes());
-			fos2.write(uName.getBytes());
-			fos3.write(deleteCode.getBytes());
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		try {
-			fos.close();
-			fos2.close();
-			fos3.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		Intent intent = new Intent(this, MainMenu.class);
-		startActivity(intent);
+			SharedPreferences myPrefs = getSharedPreferences("myPrefs", MODE_PRIVATE);
+			SharedPreferences.Editor e = myPrefs.edit();
+			e.putString("uName", uName);
+			e.putString("Email", userEmail);
+			e.putString("delCode", deleteCode);
+			e.commit();
+			Intent intent = new Intent(this, MainMenu.class);
+			startActivity(intent);
 		}
 		
 		

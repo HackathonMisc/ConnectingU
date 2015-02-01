@@ -1635,9 +1635,10 @@ containing a value of this type.
         public static final int bg=0x7f020033;
         public static final int bgm=0x7f020034;
         public static final int bgs=0x7f020035;
-        public static final int ic_launcher=0x7f020036;
-        public static final int logo=0x7f020037;
-        public static final int next=0x7f020038;
+        public static final int blurt=0x7f020036;
+        public static final int ic_launcher=0x7f020037;
+        public static final int logo=0x7f020038;
+        public static final int next=0x7f020039;
     }
     public static final class id {
         public static final int Cancel=0x7f090053;

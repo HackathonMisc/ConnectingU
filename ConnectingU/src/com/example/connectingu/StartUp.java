@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
+import com.microsoft.windowsazure.mobileservices.*;
 public class StartUp extends Activity {
 
 	@Override
