@@ -1,5 +1,7 @@
 package com.example.connectingu;
 
+import java.io.File;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +14,12 @@ public class StartUp extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		File file = new File("/data/data/" + getPackageName() +  "/shared_prefs/" + getPackageName()+ "_preferences.xml");
+		if(file.exists()){
+			Intent intent = new Intent(this, MainMenu.class);
+			startActivity(intent);
+		}
+		else
 		setContentView(R.layout.activity_start_up);
 		
 	}
