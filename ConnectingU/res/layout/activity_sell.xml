@@ -8,16 +8,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.connectingu.SellActivity" >
 
-    <EditText
-        android:id="@+id/textBookName"
+    <TextView
+        android:id="@+id/pageDiscript"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="46dp"
-        android:layout_marginTop="78dp"
-        android:hint="Textbook name"
-        android:ems="10" >
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Post the name, price and details of the textbook you wish to sell." />
+
+    <EditText
+        android:id="@+id/bookDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/publish"
+        android:layout_alignLeft="@+id/Price"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="description" >
 
         <requestFocus />
     </EditText>
@@ -26,39 +34,21 @@
         android:id="@+id/Price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/bookDescription"
         android:layout_alignLeft="@+id/textBookName"
-        android:layout_below="@+id/textBookName"
-        android:layout_marginTop="19dp"
+        android:layout_marginBottom="61dp"
         android:ems="10"
         android:hint="Enter Price" />
 
     <EditText
-        android:id="@+id/bookDescription"
+        android:id="@+id/textBookName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Price"
-        android:hint="description"
-        android:layout_centerVertical="true"
-        android:ems="10" />
-
-    <TextView
-        android:id="@+id/pageDiscript"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:text="Post the name, price and details of your text book you wish to sale." />
-
-    <Button
-        android:id="@+id/publish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/bookDescription"
-        android:layout_marginBottom="24dp"
-        android:onClick="publishBook"
-        android:text="Upload" />
+        android:layout_above="@+id/Price"
+        android:layout_alignLeft="@+id/pageDiscript"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="Textbook name" />
 
     <Button
         android:id="@+id/MainMenu"
@@ -66,9 +56,20 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/publish"
         android:layout_alignBottom="@+id/publish"
-        android:layout_alignLeft="@+id/pageDiscript"
-        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@+id/bookDescription"
+        android:layout_marginLeft="18dp"
         android:onClick="mainMenu"
         android:text="Main Menu" />
+
+    <Button
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/pageDiscript"
+        android:layout_marginBottom="71dp"
+        android:layout_marginRight="20dp"
+        android:onClick="publishBook"
+        android:text="Upload" />
 
 </RelativeLayout>

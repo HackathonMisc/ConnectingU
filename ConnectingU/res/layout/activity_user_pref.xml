@@ -15,18 +15,46 @@
         android:layout_height="wrap_content"
         android:text="@string/UserPref"
         android:textColor="#ffffff"
+        android:textSize="20sp"
         android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
          />
+
+    <EditText
+        android:id="@+id/uName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Description"
+        android:layout_below="@+id/Description"
+        android:layout_marginTop="38dp"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:hint="Enter Name" />
+
+    <EditText
+        android:id="@+id/deletionCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailLine"
+        android:layout_below="@+id/emailLine"
+        android:layout_marginTop="43dp"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:hint="Enter Deletion Code" />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="17dp"
-        android:layout_marginRight="14dp"
+        android:layout_alignRight="@+id/Description"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/deletionCode"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="46dp"
         android:onClick="saveToFile"
+        android:enabled="false"
+        android:textSize="20sp"
+        android:background="@null"
         android:text="Save" />
 
     <Button
@@ -36,42 +64,25 @@
         android:layout_alignBaseline="@+id/saveButton"
         android:layout_alignBottom="@+id/saveButton"
         android:layout_alignLeft="@+id/deletionCode"
-        android:layout_marginLeft="34dp"
+        android:textColor="#ffffff"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
+        android:layout_marginLeft="17dp"
+        android:textSize="20sp"
+        android:background="@null"
         android:onClick="cancel"
+        android:enabled="false"
         android:text="Cancel" />
 
     <EditText
         android:id="@+id/emailLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/deletionCode"
-        android:layout_alignLeft="@+id/deletionCode"
-        android:layout_marginBottom="57dp"
+        android:layout_alignLeft="@+id/uName"
+        android:layout_below="@+id/uName"
+        android:layout_marginTop="42dp"
+        android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/deletionCode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/saveButton"
-        android:layout_alignLeft="@+id/uName"
-        android:layout_marginBottom="78dp"
-        android:ems="10"
-        android:hint="Enter deletion code" />
-
-    <EditText
-        android:id="@+id/uName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/emailLine"
-        android:layout_alignLeft="@+id/Description"
-        android:layout_marginBottom="42dp"
-        android:ems="10"
-        android:hint="Enter Name" >
-
-        <requestFocus />
-    </EditText>
 
 </RelativeLayout>
