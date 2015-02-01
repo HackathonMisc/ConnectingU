@@ -1,35 +1,26 @@
 package com.example.connectingu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class Buy extends ActionBarActivity {
+	
+	private List<textBookModel> textBooks = new ArrayList<textBookModel>(); 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_buy);
-		
-		final ListView listView = (ListView) findViewById(R.id.list);
-		String[] values = new String[] { "Android List View", 
-                "Adapter implementation",
-                "Simple List View In Android",
-                "Create List View Android", 
-                "Android Example", 
-                "List View Source Code", 
-                "List View Array Adapter", 
-                "Android Example List View" 
-               };
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-	              android.R.layout.simple_list_item_1, android.R.id.text1, values);
-	    
-	    
-	            listView.setAdapter(adapter); 
-	            
 	           
 		
 		
@@ -52,5 +43,32 @@ public class Buy extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	private void populateList(){
+		ArrayAdapter<textBookModel> adepter = new MyListAdepter();
+		ListView list = (ListView) findViewById(R.id.listView1);
+		list.setAdapter(adepter);
+	}
+	
+	private class MyListAdepter extends ArrayAdapter<textBookModel>{
+		public MyListAdepter(){
+			super(Buy.this, R.layout.item_view, textBooks);
+		}
+		public View getView(int position, View convertView, ViewGroup parent){
+			View itemView = convertView;
+			if(itemView == null){
+				itemView = getLayoutInflater().inflate(R.layout.item_view, parent, false);
+			}
+			//Still need to get the position on the list
+			
+			//Replace Test with the actual title from the object
+			TextView title = (TextView) itemView.findViewById(R.id.ListTitle);
+			title.setText("Test");
+			
+			
+			
+			return itemView;
+		}
 	}
 }

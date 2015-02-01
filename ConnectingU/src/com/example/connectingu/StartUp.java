@@ -1,23 +1,19 @@
 package com.example.connectingu;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
-public class StartUp extends ActionBarActivity {
+public class StartUp extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_up);
-		TextView myTextView=(TextView)findViewById(R.id.button1);
-		Typeface typeFace=Typeface.createFromAsset(getAssets(),"fonts/Roboto-Thin.ttf");
-		myTextView.setTypeface(typeFace);
+		
 	}
 
 	@Override

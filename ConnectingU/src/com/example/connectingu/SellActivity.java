@@ -1,11 +1,13 @@
 package com.example.connectingu;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class SellActivity extends ActionBarActivity {
+public class SellActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,5 +34,9 @@ public class SellActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	public void mainMenu(View view){
+		Intent intent = new Intent(this, MainMenu.class);
+		startActivity(intent);
 	}
 }

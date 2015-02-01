@@ -21,7 +21,6 @@
         android:onClick="goToBuy"
         android:text="Buy Textbooks"
         android:textColor="#FFFFFF"
-        android:enabled="false"
         android:textSize="20sp" />
 
     <Button
@@ -36,7 +35,6 @@
         android:onClick="goToSell"
         android:text="Sell Textbooks"
         android:textColor="#FFFFFF"
-        android:enabled="false"
         android:textSize="20sp" />
 
     <Button
@@ -47,7 +45,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="62dp"
         android:background="@null"
-        android:enabled="false"
         android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
         android:onClick="goToUserPref"
         android:text="User Prefrences"

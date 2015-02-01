@@ -52,7 +52,6 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="46dp"
         android:onClick="saveToFile"
-        android:enabled="false"
         android:textSize="20sp"
         android:background="@null"
         android:text="Save" />
@@ -78,7 +77,6 @@
         android:layout_alignLeft="@+id/deletionCode"
         android:layout_marginLeft="18dp"
         android:background="@null"
-        android:enabled="false"
         android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
         android:onClick="cancel"
         android:text="Cancel"

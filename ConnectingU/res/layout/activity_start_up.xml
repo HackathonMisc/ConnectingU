@@ -27,14 +27,16 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="100dp"
         android:background="@null"
-        android:enabled="false"
         android:fontFamily="assets/Fonts/Roboto-Thin.ttf"
         android:minHeight="70dp"
         android:onClick="goToUserPref"
+        android:shadowDx="0"
+        android:shadowDy="0"
         android:shadowRadius="0"
         android:text="Let&apos;s Get Connected!"
         android:textColor="#ffffff"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:windowContentOverlay="@null" />
 
     <Button
         android:id="@+id/button2"
@@ -44,7 +46,6 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/next"
         android:onClick="goToUserPref"
-        android:enabled="false"
         android:minHeight="55dp"
         android:minWidth="55dp"
         android:tint="#FFFFFF" />
