@@ -33,6 +33,7 @@
         android:layout_alignBottom="@+id/saveButton"
         android:layout_alignLeft="@+id/deletionCode"
         android:layout_marginLeft="34dp"
+        android:onClick="cancel"
         android:text="Cancel" />
 
     <EditText

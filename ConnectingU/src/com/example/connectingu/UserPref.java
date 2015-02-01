@@ -94,4 +94,8 @@ public class UserPref extends ActionBarActivity {
 		startActivity(intent);
 		
 	}
+	public void cancel(View view){
+		Intent intent = new Intent(this, MainMenu.class);
+		startActivity(intent);
+	}
 }
