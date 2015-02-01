@@ -8,32 +8,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.connectingu.MainMenu" >
 
-    
     <Button
-        android:id="@+id/button1"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:text="Buy Textbooks" />
-
-    <Button
-        android:id="@+id/button2"
+        android:id="@+id/sellButton"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="33dp"
+        android:onClick="goToSell"
         android:text="Sell Textbooks" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buyButton"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="79dp"
+        android:layout_alignLeft="@+id/sellButton"
+        android:layout_below="@+id/sellButton"
+        android:layout_marginTop="36dp"
+        android:onClick="goToBuy"
+        android:text="Buy Textbooks" />
+
+    <Button
+        android:id="@+id/goToUserPref"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/buyButton"
+        android:layout_centerVertical="true"
+        android:onClick="goToUserPref"
         android:text="User Prefrences" />
 
 </RelativeLayout>

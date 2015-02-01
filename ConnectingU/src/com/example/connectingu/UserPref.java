@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -89,5 +90,8 @@ public class UserPref extends ActionBarActivity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		Intent intent = new Intent(this, MainMenu.class);
+		startActivity(intent);
+		
 	}
 }
