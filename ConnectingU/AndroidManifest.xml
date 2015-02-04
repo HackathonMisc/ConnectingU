@@ -3,8 +3,9 @@
     package="com.example.connectingu"
     android:versionCode="1"
     android:versionName="1.0" >
+
     <uses-permission android:name="android.permission.INTERNET" />
-    
+
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
@@ -16,16 +17,16 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" 
-            android:screenOrientation="portrait">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".UserAccount"
-            android:label="@string/title_activity_user_account" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_user_account"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".UserPref"
+            android:name=".views.UserPref"
             android:label="@string/title_activity_user_pref"
             android:screenOrientation="portrait" >
         </activity>
@@ -35,7 +36,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".SellActivity"
+            android:name=".views.SellActivity"
             android:label="@string/title_activity_sell"
             android:screenOrientation="portrait" >
         </activity>
@@ -43,6 +44,22 @@
             android:name=".StartUp"
             android:label="@string/title_activity_start_up"
             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StartName"
+            android:label="@string/title_activity_start_name" >
+        </activity>
+        <activity
+            android:name=".views.MainMenu"
+            android:label="@string/menuMain" >
+        </activity>
+        <activity
+            android:name=".views.Buy"
+            android:label="@string/title_activity_buy" >
+        </activity>
+        <activity
+            android:name=".views.Start"
+            android:label="@string/title_activity_start" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,16 +67,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StartName"
-            android:label="@string/title_activity_start_name" >
-        </activity>
-        <activity
-            android:name=".MainMenu"
-            android:label="@string/title_activity_main_menu" >
-        </activity>
-        <activity
-            android:name=".Buy"
-            android:label="@string/title_activity_buy" >
+            android:name=".BookItemView"
+            android:label="@string/title_activity_book_item_view" >
         </activity>
     </application>
 

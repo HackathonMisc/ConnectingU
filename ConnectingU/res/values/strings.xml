@@ -12,5 +12,9 @@
     <string name="title_activity_start_name">StartName</string>
     <string name="title_activity_main_menu">MainMenu</string>
     <string name="title_activity_buy">Buy</string>
+    <string name="menuMain">connectingU</string>
+    <string name="title_activity_start">Start</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_book_item_view">BookItemView</string>
 
 </resources>
